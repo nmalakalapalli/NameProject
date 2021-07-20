@@ -3,26 +3,27 @@
         <title>Name Pronunciation Site</title>
     </head>
 	<script src="js/namelookup.js"></script>
+
+    <body>
+		<h1>Name and Pronounciation</h1>
+		
+		<!-- This should return the picture -->
+			<img src="img/StateAuto.png" alt="State Auto Logo">
+			
+		<!-- This should provide the user options for voices -->
+		<p>Please select a voice to pronounce the name:</p>
+	<form>
+		<input type="radio" id="Voice 1" name="voice">
+		<label for="Voice 1">Voice 1</label><br>
+		
+		<input type="radio" id="Voice 2" name="voice">
+		<label for="Voice 2">Voice 2</label><br>
+	</form>	
+    </body>	
+	
+	
     <form id="nameform">
 		<label for="name">Enter Name:</label><br>
 		<input type="text" id="name"><br>
 		<input type="button" id="sub" value="Look up pronunciation" onclick="playName(nameform)">
-    <body>
-		<h1>Name and Pronounciation</h1>
-		<table style ="width:25%">
-			<tr>
-				<th>Name</th>
-				<th>Recording</th>
-			</tr>
-		
-			<tr align = "center">
-				<td>Varun</td>
-				<td><a href="./recordings">Click here to open directory</a></td>
-			</tr>
-		
-			<tr align = "center">
-				<td>Nikhil</td>
-				<td><a href="./recordings">Click here to open directory</a></td>
-	    </table>
-    </body>	
 </html>  
