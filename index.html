@@ -20,15 +20,14 @@
 			<td><a href="./recordings">Click here to open directory</a></td>
 		</tr>
 	    </table>
-        <h1>Index of voice recordings</h1>
-		<a href="./recordings">Click here to open directory</a>
 
-    	<script>
-	var pic = document.createElement("img");
-	img.scr = "StateAuto.png";
-	var src = document.getElementByID("x");
-	src.appendChild(img);
-	</script>
-     
-    </body>
+		<img id="SA Logo" src="StateAuto.png" alt="StateAuto Logo" width="250" height="250">
+		<p id="demo"></p>
+		<script>
+		function picture(){
+			var x = document.getElementByID("SA Logo").src;
+			document.getElementByID("demo").innerHTML = x;
+		}
+		</script>
+    </body>	
 </html>    
