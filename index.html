@@ -3,35 +3,35 @@
         <title>Name Pronunciation Site</title>
     </head>
 	 
-    <form action = "/action_page.php">
-	<label for="name">Enter Name:</label><br>
-	<input type="text" id="name" name="name" value= " "><br>
-	<input type="submit" value="Submit">
+    <form id="nameform" action = "/action_page.php">
+		<label for="name">Enter Name:</label><br>
+		<input type="text" id="name" value= " "><br>
+		<input type="button" id="sub" value="Look up pronunciation" onclick="playName(nameform)">
     <body>
-	<h1>Name and Pronounciation</h1>
-	<table style ="width:25%">
-		<tr>
-			<th>Name</th>
-			<th>Recording</th>
-		</tr>
+		<h1>Name and Pronounciation</h1>
+		<table style ="width:25%">
+			<tr>
+				<th>Name</th>
+				<th>Recording</th>
+			</tr>
 		
-		<tr align = "center">
-			<td>Varun</td>
-			<td><a href="./recordings">Click here to open directory</a></td>
-		</tr>
+			<tr align = "center">
+				<td>Varun</td>
+				<td><a href="./recordings">Click here to open directory</a></td>
+			</tr>
 		
-		<tr align = "center">
-			<td>Nikhil</td>
-			<td><a href="./recordings">Click here to open directory</a></td>
+			<tr align = "center">
+				<td>Nikhil</td>
+				<td><a href="./recordings">Click here to open directory</a></td>
 	    </table>
 
-		<img id="SA Logo" src="StateAuto.png" alt="StateAuto Logo" width="250" height="250">
-		<p id="demo"></p>
-		<script>
-		function picture(){
-			var x = document.getElementByID("SA Logo").src;
-			document.getElementByID("demo").innerHTML = x;
-		}
-		</script>
+			<img id="SA Logo" src="StateAuto.png" alt="StateAuto Logo" width="250" height="250">
+			<p id="demo"></p>
+			<script>
+				function picture(){
+				var x = document.getElementByID("SA Logo").src;
+				document.getElementByID("demo").innerHTML = x;
+				}
+			</script>
     </body>	
-</html>    
+</html>  
