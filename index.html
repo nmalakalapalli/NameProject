@@ -2,10 +2,10 @@
     <head>
         <title>Name Pronunciation Site</title>
     </head>
-	 
-    <form id="nameform" action = "/action_page.php">
+	<script src="js/namelookup.js"></script>
+    <form id="nameform">
 		<label for="name">Enter Name:</label><br>
-		<input type="text" id="name" value= " "><br>
+		<input type="text" id="name"><br>
 		<input type="button" id="sub" value="Look up pronunciation" onclick="playName(nameform)">
     <body>
 		<h1>Name and Pronounciation</h1>
@@ -24,14 +24,5 @@
 				<td>Nikhil</td>
 				<td><a href="./recordings">Click here to open directory</a></td>
 	    </table>
-
-			<img id="SA Logo" src="StateAuto.png" alt="StateAuto Logo" width="250" height="250">
-			<p id="demo"></p>
-			<script>
-				function picture(){
-				var x = document.getElementByID("SA Logo").src;
-				document.getElementByID("demo").innerHTML = x;
-				}
-			</script>
     </body>	
 </html>  
