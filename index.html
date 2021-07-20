@@ -3,34 +3,17 @@
         <title>Name Pronunciation Site</title>
     </head>
 	<script src="js/namelookup.js"></script>
-	<script src="js/picture.js"></script>
 
+    <body>
+		<h1>Name and Pronounciation</h1>
+		
+		<!-- This should return the picture -->
+			<img src="img/StateAuto.png" alt="State Auto Logo">
+    </body>	
+	
+	
     <form id="nameform">
 		<label for="name">Enter Name:</label><br>
 		<input type="text" id="name"><br>
 		<input type="button" id="sub" value="Look up pronunciation" onclick="playName(nameform)">
-    <body>
-		<h1>Name and Pronounciation</h1>
-		
-		<!-- This is the table -->
-		<table style ="width:25%">
-			<tr>
-				<th>Name</th>
-				<th>Recording</th>
-			</tr>
-		
-			<tr align = "center">
-				<td>Varun</td>
-				<td><a href="./recordings">Click here to open directory</a></td>
-			</tr>
-		
-			<tr align = "center">
-				<td>Nikhil</td>
-				<td><a href="./recordings">Click here to open directory</a></td>
-	    </table>
-		
-		<!-- This should return the picture -->
-			<img id="SA Logo" src="StateAuto.png" alt="StateAuto Logo" width="250" height="250">
-			<p id="demo"></p>
-    </body>	
 </html>  
