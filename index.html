@@ -22,10 +22,12 @@
 			
 	<form id="nameform">
 	<label for="name">Enter Name:</label><br>
-	<input type="text" id="name"><br>
+	<input type="text" id="name" placeholder="Enter a name..."><br>
 	<input type="button" id="sub" value="Look up pronunciation" onclick="playName(nameform)">
 
-	<table style="width:100px; border: 1px solid black">
+	
+	<input type="text" id="myInput" onekeyup="myFunction()" placeholder="Search for names...">
+	<table style="width:100px; border: 1px solid black" id="myTable">
 	<tr>
 		<td>Name</td>
 		<td>Speaker 1</td>
@@ -73,10 +75,11 @@
 		<a href="index.html">Home</a>
 		<a href="page_2.html">2</a>
 		<a href="page_3.html">3</a>
-		<a href= "page_2.html">Next</a>
-		
+		<a href= "page_2.html">Next</a>		
 	</div>
 	
+	
+	<script src="js/filter.js"></script>
     </body>	
 
 </html>  
