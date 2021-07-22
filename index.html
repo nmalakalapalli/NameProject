@@ -1,8 +1,10 @@
 <html>
     <head>
         <title>Name Pronunciation Site</title>
+		<link rel="stylesheet" href="css/search.css">
     </head>
 	<script src="js/namelookup.js"></script>
+	<script src="js/filter.js"></script>
 
     <body>
 		<h1>Name and Pronounciation</h1>
@@ -19,14 +21,15 @@
 		<input type="radio" id="voice_2" name="voice">
 		<label for="Voice 2">Voice 2</label><br>
 	</form>	
-			
+	
+	<!-- This is the form to automatically search a name and play its recording. -->
 	<form id="nameform">
 	<label for="name">Enter Name:</label><br>
 	<input type="text" id="name" placeholder="Enter a name..."><br>
 	<input type="button" id="sub" value="Look up pronunciation" onclick="playName(nameform)">
 
-	
-	<input type="text" id="myInput" onekeyup="myFunction()" placeholder="Search for names...">
+	<!-- This is the form to filter the table. -->
+	<input type="text" id="myInput" onkeyup="tableFilter()" placeholder="Search for names...">
 	<table style="width:100px; border: 1px solid black" id="myTable">
 	<tr>
 		<td>Name</td>
@@ -69,17 +72,74 @@
 		<td><audio controls src="./recordings/Dhiren.m4a"></td>
 		<td><audio controls src="./recordings/Dhiren-3.m4a"></td>
 	</tr>
+
+	<tr>
+		<td>Gabriel</td>
+		<td><audio controls src="./recordings/Gabriel-1.m4a"></td>
+		<td><audio controls src="./recordings/Gabriel-3.m4a"></td>
+	</tr>
+	
+	<tr>
+		<td>Maari</td>
+		<td><audio controls src="./recordings/Maari-1.m4a"></td>
+		<td><audio controls src="./recordings/Maari-3.m4a"></td>
+	</tr>
+	
+	<tr>
+		<td>Narender</td>
+		<td><audio controls src="./recordings/Narender-1.m4a"></td>
+		<td><audio controls src="./recordings/Narender-3.m4a"></td>
+	</tr>
+	
+	<tr>
+		<td>Nikhil</td>
+		<td><audio controls src="./recordings/Nikhil-1.m4a"></td>
+		<td><audio controls src="./recordings/Nikhil-3.m4a"></td>
+	</tr>
+	
+	<tr>
+		<td>Pradeep</td>
+		<td><audio controls src="./recordings/Pradeep-1.m4a"></td>
+		<td><audio controls src="./recordings/Pradeep-3.m4a"></td>
+	</tr>
+	
+	<tr>
+		<td>Rakesh</td>
+		<td><audio controls src="./recordings/Rakesh-1.m4a"></td>
+		<td><audio controls src="./recordings/Rakesh-3.m4a"></td>
+	</tr>
+	
+	<tr>
+		<td>Ron</td>
+		<td><audio controls src="./recordings/Ron-1.m4a"></td>
+		<td><audio controls src="./recordings/Ron-3.m4a"></td>
+	</tr>
+	
+	<tr>
+		<td>Sridhar</td>
+		<td><audio controls src="./recordings/Sridhar-1.m4a"></td>
+		<td><audio controls src="./recordings/Sridhar-3.m4a"></td>
+	</tr>
+	
+	<tr>
+		<td>Tim</td>
+		<td><audio controls src="./recordings/Tim-1.m4a"></td>
+		<td><audio controls src="./recordings/Tim-3.m4a"></td>
+	</tr>
+	
+	<tr>
+		<td>Varun</td>
+		<td><audio controls src="./recordings/Varun-1.m4a"></td>
+		<td><audio controls src="./recordings/Varun-3.m4a"></td>
+	</tr>
+	
+	<tr>
+		<td>Venkat</td>
+		<td><audio controls src="./recordings/Venkat-1.m4a"></td>
+		<td><audio controls src="./recordings/Venkat-3.m4a"></td>
+	</tr>
 	</table>
 	
-	<div class= "navbar">
-		<a href="index.html">Home</a>
-		<a href="page_2.html">2</a>
-		<a href="page_3.html">3</a>
-		<a href= "page_2.html">Next</a>		
-	</div>
-	
-	
-	<script src="js/filter.js"></script>
     </body>	
 
 </html>  
