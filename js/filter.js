@@ -6,7 +6,6 @@ function tableFilter(){
 		filter = input.value.toUpperCase();
 		table = document.getElementById("myTable");
 		tr = table.getElementsByTagName("tr");
-		console.log(filter);
 		
 		for(i=0; i < tr.length; i++){
 			td =tr[i].getElementsByTagName("td")[0];
