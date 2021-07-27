@@ -5,6 +5,27 @@
     </head>
 	<script src="js/namelookup.js"></script>
 	<script src="js/filter.js"></script>
+	<script src="js/pagination.js"></script>
+	
+	
+	<!--Bootstrapping and Pagination Attempts -->
+	<link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"> </script>
+	
+	
+	<link href= "https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet"/>
+
+	<!--
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+	<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+	-->
+	
+	
+	<!-- ************************************* -->
 
     <body>
 		<h1>Name and Pronounciation</h1>
@@ -12,7 +33,7 @@
 		<!-- This should return the picture -->
 			<img src="img/StateAuto.png" alt="State Auto Logo">
 			
-		<!-- This should provide the user options for voices -->
+		<!-- This should provide the user options for voices 
 		<p>Please select a voice to pronounce the name:</p>
 	 <form id="nameform">
 		<input type="radio" id="voice_1" name="voice">
@@ -21,127 +42,169 @@
 		<input type="radio" id="voice_2" name="voice">
 		<label for="Voice 2">Voice 2</label><br>
 	</form>	
+	-->
 	
-	<!-- This is the form to automatically search a name and play its recording. -->
+	<!-- This is the form to automatically search a name and play its recording. 
 	<form id="nameform">
 	<label for="name">Enter Name:</label><br>
 	<input type="text" id="name" placeholder="Enter a name..."><br>
 	<input type="button" id="sub" value="Look up pronunciation" onclick="playName(nameform)">
+	-->
 
-
-	<!-- This is the form to filter the table. -->
+	<!-- This is the form to filter the table.
 	<input type="text" id="myInput" onkeyup="tableFilter()" placeholder="Search for names...">
+	 -->
+	<div class="container" style="margin-top:35px">
+	
+	<!-- This is to ask the user to select the number of names to see on the page 
+		<h4>Select Number of Rows</h4>
+		<div class="form-group">
+			<select name="state" id="maxRows" class="form-control" style="width:150px;">
+				<option value="17">Show All</option>
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+			</select>
+		</div>
+		-->
 
-	<table style="width:100px; border: 1px solid black" id="myTable">
-	<tr>
-		<td>Name</td>
-		<td>Speaker 1</td>
-		<td>Speaker 2</td>
-	</tr>
+	<table id="myTable" class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Speaker 1</th>
+				<th>Speaker 2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Amy</td>
+				<td><audio controls src="./recordings/Amy-1.m4a"></td>
+				<td><audio controls src="./recordings/Amy-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Amy</td>
-		<td><audio controls src="./recordings/Amy-1.m4a"></td>
-		<td><audio controls src="./recordings/Amy-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Anna</td>
+				<td><audio controls src="./recordings/Anna-1.m4a"></td>
+				<td><audio controls src="./recordings/Anna-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Anna</td>
-		<td><audio controls src="./recordings/Anna-1.m4a"></td>
-		<td><audio controls src="./recordings/Anna-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Bhadra</td>
+				<td><audio controls src="./recordings/Bhadra-1.m4a"></td>
+				<td><audio controls src="./recordings/Bhadra-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Bhadra</td>
-		<td><audio controls src="./recordings/Bhadra-1.m4a"></td>
-		<td><audio controls src="./recordings/Bhadra-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Christopher</td>
+				<td><audio controls src="./recordings/Christopher-1.m4a"></td>
+				<td><audio controls src="./recordings/Christopher-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Christopher</td>
-		<td><audio controls src="./recordings/Christopher-1.m4a"></td>
-		<td><audio controls src="./recordings/Christopher-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Deepa</td>
+				<td><audio controls src="./recordings/Deepa-1.m4a"></td>
+				<td><audio controls src="./recordings/Deepa-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Deepa</td>
-		<td><audio controls src="./recordings/Deepa-1.m4a"></td>
-		<td><audio controls src="./recordings/Deepa-3.m4a"></td>
-	</tr>
-	
-	<tr>
-		<td>Dhiren</td>
-		<td><audio controls src="./recordings/Dhiren.m4a"></td>
-		<td><audio controls src="./recordings/Dhiren-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Dhiren</td>
+				<td><audio controls src="./recordings/Dhiren.m4a"></td>
+				<td><audio controls src="./recordings/Dhiren-3.m4a"></td>
+			</tr>
 
-	<tr>
-		<td>Gabriel</td>
-		<td><audio controls src="./recordings/Gabriel-1.m4a"></td>
-		<td><audio controls src="./recordings/Gabriel-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Gabriel</td>
+				<td><audio controls src="./recordings/Gabriel-1.m4a"></td>
+				<td><audio controls src="./recordings/Gabriel-3.m4a"></td>
+			</tr>
+			
+			<tr>
+				<td>Maari</td>
+				<td><audio controls src="./recordings/Maari-1.m4a"></td>
+				<td><audio controls src="./recordings/Maari-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Maari</td>
-		<td><audio controls src="./recordings/Maari-1.m4a"></td>
-		<td><audio controls src="./recordings/Maari-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Narender</td>
+				<td><audio controls src="./recordings/Narender-1.m4a"></td>
+				<td><audio controls src="./recordings/Narender-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Narender</td>
-		<td><audio controls src="./recordings/Narender-1.m4a"></td>
-		<td><audio controls src="./recordings/Narender-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Nikhil</td>
+				<td><audio controls src="./recordings/Nikhil-1.m4a"></td>
+				<td><audio controls src="./recordings/Nikhil-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Nikhil</td>
-		<td><audio controls src="./recordings/Nikhil-1.m4a"></td>
-		<td><audio controls src="./recordings/Nikhil-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Pradeep</td>
+				<td><audio controls src="./recordings/Pradeep-1.m4a"></td>
+				<td><audio controls src="./recordings/Pradeep-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Pradeep</td>
-		<td><audio controls src="./recordings/Pradeep-1.m4a"></td>
-		<td><audio controls src="./recordings/Pradeep-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Rakesh</td>
+				<td><audio controls src="./recordings/Rakesh-1.m4a"></td>
+				<td><audio controls src="./recordings/Rakesh-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Rakesh</td>
-		<td><audio controls src="./recordings/Rakesh-1.m4a"></td>
-		<td><audio controls src="./recordings/Rakesh-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Ron</td>
+				<td><audio controls src="./recordings/Ron-1.m4a"></td>
+				<td><audio controls src="./recordings/Ron-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Ron</td>
-		<td><audio controls src="./recordings/Ron-1.m4a"></td>
-		<td><audio controls src="./recordings/Ron-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Sridhar</td>
+				<td><audio controls src="./recordings/Sridhar-1.m4a"></td>
+				<td><audio controls src="./recordings/Sridhar-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Sridhar</td>
-		<td><audio controls src="./recordings/Sridhar-1.m4a"></td>
-		<td><audio controls src="./recordings/Sridhar-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Tim</td>
+				<td><audio controls src="./recordings/Tim-1.m4a"></td>
+				<td><audio controls src="./recordings/Tim-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Tim</td>
-		<td><audio controls src="./recordings/Tim-1.m4a"></td>
-		<td><audio controls src="./recordings/Tim-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Varun</td>
+				<td><audio controls src="./recordings/Varun-1.m4a"></td>
+				<td><audio controls src="./recordings/Varun-3.m4a"></td>
+			</tr>
 	
-	<tr>
-		<td>Varun</td>
-		<td><audio controls src="./recordings/Varun-1.m4a"></td>
-		<td><audio controls src="./recordings/Varun-3.m4a"></td>
-	</tr>
-	
-	<tr>
-		<td>Venkat</td>
-		<td><audio controls src="./recordings/Venkat-1.m4a"></td>
-		<td><audio controls src="./recordings/Venkat-3.m4a"></td>
-	</tr>
+			<tr>
+				<td>Venkat</td>
+				<td><audio controls src="./recordings/Venkat-1.m4a"></td>
+				<td><audio controls src="./recordings/Venkat-3.m4a"></td>
+			</tr>
+		</tbody>
 	</table>
+	<!--
+	<div class= "pagination-container">
+		<nav>
+			<ul class="pagination"></ul>
+		</nav>
+	</div>
+	-->
+</div>
+
+<!--
+<div class="pagination">
+	<a href="#">&laquo;</a>
+	<a class="active" href="#">1</a>
+	<a href="#">2</a>
+	<a href ="#">3</a>
+	<a href="#">&raquo;</a>		
+</div>	
+-->	
 	
-    </body>	
+	
+	<script>
+	$(document).ready( function () {
+    $('#myTable').DataTable();
+	} );
+	</script>
+	</body>	
 
 </html>  
