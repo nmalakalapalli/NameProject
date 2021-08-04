@@ -1,4 +1,5 @@
 import boto3
+import os
 
 polly = boto3.client('polly')
 
@@ -9,16 +10,18 @@ print(names)
 
 def play_sound(text):
     for text in names:
-        response = polly.synthesize_speech(Text= text, VoiceId= 'Matthew', OutputFormat='mp3')
-        body = response['AudioStream'].read()
-        file_name= text + '-1.mp3'
+        file_name = 'Voices/1/' + text + '.mp3'
+        if os.path.exists(file_name):
+            print("File " + file_name + " already exists")
+        else:
+            response = polly.synthesize_speech(Text=text, VoiceId='Matthew', OutputFormat='mp3')
+            body = response['AudioStream'].read()
 
-        with open(file_name,'wb') as file:
-            file.write(body)
-            file.close()
+            with open(file_name, 'wb') as file:
+                print(file_name)
+                file.write(body)
+                file.close()
+
 
 if __name__ == '__main__':
     play_sound(names[4])
-
-
-
