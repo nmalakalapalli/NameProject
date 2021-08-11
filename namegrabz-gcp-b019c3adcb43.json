@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "namegrabz-gcp",
+  "private_key_id": "b019c3adcb439c17ae06c72b6d32b37a41bab6cd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDY2kzRG+W/Rh4U\nOWEdpvFxSJ22XGCRN/mDuiYArTZp+kfhSULLFfc7w250U/VtpzX/QUMIvI/X3wSk\nEXXPO1XlmOjstwkoLYwKzq4KuWunBEeuOw0VzL20W0KPUS5HFo6Pmknhg6lf4lSn\n1YAaaB4AMKaejL/99Blw3hHDXAOVGJuU/TIS/4lJ5NvFAuI5KOWxFMu4viHuNhC1\nKA3DpW0mr8f8z//pwDBLMzWPqWFFfGEg6g+qngmvF32G7+EBDkhPuZ+OOX2t7lX3\n9eY2VSCRWhNkR1cb2AKUAgP8R9dh+relxzTqF7qjXpXKUeMqcOAjWtYLYmUDryKJ\nLRFRxmzRAgMBAAECggEAGA4vU0sK82rtz0SGN2nbgruRczdQJwvUi/5MVOriDGON\nMbqUxD6NjH2jdRgTM7TG0qgEraVtN38v3ptpPDHS14Nc41VymJhk3pYKzHnBLWfW\nI8e9Ldvmd2lgOtHAlnY0Hk35QCEA2vgad/vBGCzQlyjOcuweKCe54sFfqxI7+3/o\n7YXQdpg23Uhlxtt/XmYoNoB3k3pUdSZ41ZfQFXohE0jy42ygttqJvfDCSnmj+qH1\nc+f4GgJ2GZVsVbunp6VcocOqkVNUlA82GbZJ1PXyPvau9pkpE4ZXa5eg9EReg/7B\n5Nfby0raYG4By6dl47qPWCXuCZiDZfz1dMu0mIjAuQKBgQD8HczkkSSHgLX2JKE8\nluHcuhSYCDdovguA7or0KVz1CGP3ydbg0lHBwwrM/O6PJRu8B6wGyp4Aw1n/r/Ns\nFZ9FfAJVS7KV3BCOW55UN2sCcuD1VcO7d/MXexgTWulhnq/Ag2X1nUQKCpInPQBH\nYKxOAOhmchk7TJ2ld0WGSpRYOwKBgQDcMXC+UOKhz/hZgRE2Sxs1T26yvaD+pZrS\nZZ0cg+FGav1aJrxotJQ60nCoaA3EYjp4hgBFOy65RFp5ktBSJ1Spao8QnbuWf6+l\nEbqtIukEzc1Zl6FE2cp5pIhPSYAqrOw+6bIBAKxVR3FKyY/Ppxor68BSLV+GBsdH\nV94Ok4IKYwKBgQCxc4gzmLVNapqolT+nlcuDwLWeDKpzXtBZ/4xuLm7vSOiUD8ze\nkSpaZx3DCoQe3M+YmQ3L+fEcOGOwQ/fhq5ZfIdnCj3UzZaGBkZrvS9JV9uW/yI3r\n9ZF0hX98oBCEVVz+831gU0EAkFAurhD0LGcawCjTcpuv0U1kmX6l9vhS4QKBgH4z\nsATEY0CO7C6QdQcDQRLq9e1oFjAdRoE0UDoZtDIh/BeBgBca+KJGHt/G060tB4ow\nc1M6umrhLGHlrZSIilOXiWvim7OEd21Kng3BpoBkXD/vUjUeBph1ntKis9zBw53D\nX4yHkD5IdjyBDfXcNnnZ4x62drtggzL2v4TnMm81AoGBAOF+0C34mzemhgUxgHb0\nEYBy/SOcVSCcoLImtMER0JT5VMjiPXXOlaBhFFfTbNRbpG0GbXm4InXJmh1lpT6z\nU6q/bE48mAtvOE4MIUNNUPUqGxO1jdF8PoVi1vKXNFPJqZaDapYsOtSghFge5jEK\nIHL9pXVeaqF8CUh7vUv8m5cF\n-----END PRIVATE KEY-----\n",
+  "client_email": "varun-gopal@namegrabz-gcp.iam.gserviceaccount.com",
+  "client_id": "117628422680591569913",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/varun-gopal%40namegrabz-gcp.iam.gserviceaccount.com"
+}
