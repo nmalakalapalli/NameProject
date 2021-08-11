@@ -3,7 +3,7 @@ import os
 
 polly = boto3.client('polly')
 
-names = open("random_125_names.txt").read().lower().splitlines()
+names = open("random_500_names.txt").read().lower().splitlines()
 names[0] = names[0][3:]
 print(names)
 awsspeakers = ['Matthew', 'Kimberly', 'Aditi']
