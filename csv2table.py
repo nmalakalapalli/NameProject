@@ -1,11 +1,11 @@
 # Python program to convert
 # CSV to HTML Table
 namelist = open('random_500_names.txt').read().split()
-namelist = [x.capitalize() + ",<i class=\"bi bi-play-circle\" onclick= \"playAudio('./Voices/1/" + x + ".mp3')\"></i>" \
-                                                                                  ",<i class=\"bi bi-play-circle\" onclick= \"playAudio('./Voices/2/" + x + ".mp3')\"></i>" \
-                                                                                  ",<i class=\"bi bi-play-circle\" onclick= \"playAudio('./Voices/3/" + x + ".mp3')\"></i>" \
-                                                                                 ",<i class=\"bi bi-play-circle\" onclick= \"playAudio('./Voices/4/" + x + ".mp3')\"></i>" \
-                                                                                 ",<i class=\"bi bi-play-circle\" onclick= \"playAudio('./Voices/5/" + x + ".mp3')\"></i>" for x in namelist]
+namelist = [x.capitalize() + ",<i class=\"bi bi-play-circle\" style=\"font-size:2rem\" onclick=\"playAudio('./Voices/1/" + x + ".mp3')\"></i>" \
+                                                                                  ",<i class=\"bi bi-play-circle\" style=\"font-size:2rem\"  onclick= \"playAudio('./Voices/2/" + x + ".mp3')\"></i>" \
+                                                                                  ",<i class=\"bi bi-play-circle\" style=\"font-size:2rem\"  onclick= \"playAudio('./Voices/3/" + x + ".mp3')\"></i>" \
+                                                                                 ",<i class=\"bi bi-play-circle\" style=\"font-size:2rem\"  onclick= \"playAudio('./Voices/4/" + x + ".mp3')\"></i>" \
+                                                                                 ",<i class=\"bi bi-play-circle\" style=\"font-size:2rem\"  onclick= \"playAudio('./Voices/5/" + x + ".mp3')\"></i>" for x in namelist]
 
 with open('namefile.csv', 'w') as f:
     f.write("Name, Speaker 1, Speaker 2, Speaker 3, Speaker 4,Speaker 5 \n")
