@@ -1,7 +1,7 @@
 # Python program to convert
 # CSV to HTML Table
 namelist = open('random_500_names.txt').read().split()
-namelist = [x + ",<i class=\"bi bi-play-circle\" onclick= \"playAudio('./Voices/1/" + x + ".mp3')\"></i>" \
+namelist = [x.capitalize() + ",<i class=\"bi bi-play-circle\" onclick= \"playAudio('./Voices/1/" + x + ".mp3')\"></i>" \
                                                                                   ",<i class=\"bi bi-play-circle\" onclick= \"playAudio('./Voices/2/" + x + ".mp3')\"></i>" \
                                                                                   ",<i class=\"bi bi-play-circle\" onclick= \"playAudio('./Voices/3/" + x + ".mp3')\"></i>" \
                                                                                  ",<i class=\"bi bi-play-circle\" onclick= \"playAudio('./Voices/4/" + x + ".mp3')\"></i>" \

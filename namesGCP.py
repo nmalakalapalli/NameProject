@@ -2,11 +2,11 @@ import os
 from google.cloud import texttospeech
 from google.cloud import texttospeech_v1
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'namegrabz-gcp-b019c3adcb43.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'namegrabz-gcp-be3ef8eb02c4.json'
 client = texttospeech_v1.TextToSpeechClient()
 
 names = open("random_500_names.txt").read().lower().splitlines()
-names[0] = names[0][3:]
+#names[0] = names[0][3:]
 print(names)
 gender = ['MALE', 'FEMALE']
 count = 3
